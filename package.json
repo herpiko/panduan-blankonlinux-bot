@@ -10,6 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "request": "^2.69.0",
-    "telegram-bot-node": "^0.2.6"
+    "telegram-node-bot": "^2.0.3"
   }
 }
