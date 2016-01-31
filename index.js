@@ -37,11 +37,9 @@ bot.controller('Command', function(x){
               break;
             }
           }
-          if (response.toLowerCase().indexOf("simsimi")) {
-            response = response.replace("Simsimi", "simsimi");
-            response = response.replace("simsimi", botName);
-            response = response.replace("simi", botName);
-          }
+          response = response.replace("Simsimi", "simsimi");
+          response = response.replace("simsimi", botName);
+          response = response.replace("simi", botName);
           x.sendMessage('@' + from + ', ' + response.toLowerCase());
         } else {
           x.sendMessage('@' + from + ', maaf, ' + botName + ' lagi pusing. besok aja lagi ya.');
