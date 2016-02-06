@@ -38,6 +38,9 @@ var req = function(x) {
       }
       x.sendMessage('@' + from + ', ' + response.toLowerCase());
     } else {
+      if (failCount > 5) {
+        return x.sendMessage('@' + from + ', maaf, ' + botName + ' lagi pusing. besok aja lagi ya.');
+      }
       failCount++;
       if (currentToken == 3) {
         currentToken = 0;
@@ -45,9 +48,6 @@ var req = function(x) {
         currentToken++;
       }
       req(x);
-      if (failCount > 5) {
-        x.sendMessage('@' + from + ', maaf, ' + botName + ' lagi pusing. besok aja lagi ya.');
-      }
     }
   });
 
