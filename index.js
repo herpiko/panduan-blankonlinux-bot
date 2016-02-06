@@ -4,7 +4,7 @@ var bot = require('telegram-node-bot')('telegramtoken');
 var swearWords = fs.readFileSync('swearwordlist.txt').toString().split("\n");
 var botName = 'wakijo';
 var state = 'wakeup';
-var tokens = ['5fb2c0f3-2fea-48c0-ac88-cfc88084eac7','d06be67e-1542-4840-ae89-f59ed6a7642c','2c4087c8-e70c-4c97-a7a2-bac4e8534fdb','203dd4af-60c3-4bc0-aed5-8bd4addbab6f']
+var tokens = ['simsimitoken'] // array of simsimi token
 var currentToken = 0;
 bot.router
   .when(['ping'], 'PingController')
