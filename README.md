@@ -1,18 +1,13 @@
-## Simsigram
+## panduan-blankonlinux-bot
 
-Let simsimi talks in Telegram!
+Bot that tell you about new posts from panduan.blankonlinux.or.id
 
 ### Requirements
 
-- ``node`` and ``npm``
+- `NodeJS 6.x`
 
 ### How to
 
-- You need to acquire API token from http://developer.simsimi.com/
 - ``npm install``
 - ``node index.js``
 
-
-### Limitation
-
-- Trial token has one week of life and 100 reply limit in 24 hours.
