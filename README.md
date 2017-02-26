@@ -9,5 +9,5 @@ Bot that tell you about new posts from panduan.blankonlinux.or.id
 ### How to
 
 - ``npm install``
-- ``node index.js``
+- ``TOKEN=tokenstring node index.js``
 
